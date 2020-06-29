@@ -7,7 +7,7 @@
 	- sudo ./kafka-start.sh
 	
 * Run docker containers and other docker scripts
-	- Run 'sudo docker-compose up -d' at the same directory of docker-compose.yml for runing and upping containers.
+	- Run 'sudo docker-compose up -d' at the same directory of docker-compose.yml for runing and upping containers. (Be sure exposed ports in the docker-compose are not used by another processes.)
   	- Run 'sudo docker-compose down' at the same directory of docker-compose.yml for stopping containers.
   	- Run 'sudo docker-compose ps' at the same directory of docker-compose.yml for seeing status of containers.
   	- Run 'sudo docker container ls -a' at the same directory of docker-compose.yml for seeing information about containers.
@@ -24,3 +24,5 @@
 * Exposed REST API is defined below for gettin total courier distance of courier with id
 	- localhost:5000/distance/couriers/{id}
 	- Example usage: run this command on your browser or with postman like localhost:5000/distance/couriers/Courier1 for courier with id "Courier1"
+	
+
